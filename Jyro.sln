@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jyro.WEB", "src\Jyro.WEB\Jyro.WEB.csproj", "{9F208654-7446-44FF-8D49-ED081BBFC3FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jyro.Core", "src\Jyro.Core\Jyro.Core.csproj", "{87D0FF61-810A-45B0-89C5-333B2E71E22F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jyro.Core", "src\Jyro.Core\Jyro.Core.csproj", "{87D0FF61-810A-45B0-89C5-333B2E71E22F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jyro.Infra", "src\Jyro.Infra\Jyro.Infra.csproj", "{D178E42E-41D8-4190-A8E0-DA64E64D209C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jyro.Infra", "src\Jyro.Infra\Jyro.Infra.csproj", "{D178E42E-41D8-4190-A8E0-DA64E64D209C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jyro.Service", "src\Jyro.Service\Jyro.Service.csproj", "{5A7A2CFA-7A7A-4D4A-BCDA-B928BE7179E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jyro.Service", "src\Jyro.Service\Jyro.Service.csproj", "{5A7A2CFA-7A7A-4D4A-BCDA-B928BE7179E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jyro.API", "src\Jyro.API\Jyro.API.csproj", "{6E948109-DE82-4E89-83EA-60501153E1D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9F208654-7446-44FF-8D49-ED081BBFC3FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F208654-7446-44FF-8D49-ED081BBFC3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F208654-7446-44FF-8D49-ED081BBFC3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F208654-7446-44FF-8D49-ED081BBFC3FA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{87D0FF61-810A-45B0-89C5-333B2E71E22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87D0FF61-810A-45B0-89C5-333B2E71E22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87D0FF61-810A-45B0-89C5-333B2E71E22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{5A7A2CFA-7A7A-4D4A-BCDA-B928BE7179E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A7A2CFA-7A7A-4D4A-BCDA-B928BE7179E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A7A2CFA-7A7A-4D4A-BCDA-B928BE7179E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E948109-DE82-4E89-83EA-60501153E1D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E948109-DE82-4E89-83EA-60501153E1D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E948109-DE82-4E89-83EA-60501153E1D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E948109-DE82-4E89-83EA-60501153E1D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
