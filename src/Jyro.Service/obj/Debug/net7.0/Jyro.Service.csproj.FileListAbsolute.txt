@@ -1,0 +1,14 @@
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Service.deps.json
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Service.runtimeconfig.json
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Service.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Service.pdb
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.csproj.AssemblyReference.cache
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.AssemblyInfoInputs.cache
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.AssemblyInfo.cs
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\refint\Jyro.Service.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.pdb
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.genruntimeconfig.cache
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\ref\Jyro.Service.dll
