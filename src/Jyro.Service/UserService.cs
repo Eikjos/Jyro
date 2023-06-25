@@ -12,7 +12,12 @@ namespace Jyro.Service
         {
             _UserRepository = userRepository;
         }
-         
+
+        public User? GetByEmail(string Email)
+        {
+            return _UserRepository.GetByEmail(Email);
+        }
+
         public User? GetById(Guid Id)
         {
             return _UserRepository.GetById(Id);

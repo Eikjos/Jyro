@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Jyro.API/1.0.0": {
         "dependencies": {
+          "BCrypt.Net": "0.1.0",
           "Jyro.Core": "1.0.0",
           "Jyro.Infra": "1.0.0",
           "Jyro.Service": "1.0.0",
@@ -20,6 +21,14 @@
         },
         "runtime": {
           "Jyro.API.dll": {}
+        }
+      },
+      "BCrypt.Net/0.1.0": {
+        "runtime": {
+          "lib/net35/BCrypt.Net.dll": {
+            "assemblyVersion": "0.1.4141.31969",
+            "fileVersion": "0.1.0.0"
+          }
         }
       },
       "EntityFramework/6.4.4": {
@@ -627,6 +636,8 @@
       "Jyro.Service/1.0.0": {
         "dependencies": {
           "EntityFramework": "6.4.4",
+          "Jyro.Core": "1.0.0",
+          "Jyro.Infra": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Npgsql": "7.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.4"
@@ -642,6 +653,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BCrypt.Net/0.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sST2w361Dxt9GGMfpOTiK50wXGV64Ybb1hiX3xjEWnhVYZNF43NuySGwADJa7X1R+bA53NsFR+tuDxcYiJeIOA==",
+      "path": "bcrypt.net/0.1.0",
+      "hashPath": "bcrypt.net.0.1.0.nupkg.sha512"
     },
     "EntityFramework/6.4.4": {
       "type": "package",

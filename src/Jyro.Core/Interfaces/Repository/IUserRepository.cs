@@ -10,5 +10,6 @@ namespace Jyro.Core.Interfaces.Repository
 {
     public interface IUserRepository : IRepository<User>
     {
+        User? GetByEmail(string Email);
     }
 }

@@ -14,5 +14,10 @@ namespace Jyro.Infra.Repository
         public UserRepository(AppDbContext AppDbContext) : base(AppDbContext)
         {
         }
+
+        public User? GetByEmail(string Email)
+        {
+            return GetAll().FirstOrDefault(u => u.Email == Email);
+        }
     }
 }

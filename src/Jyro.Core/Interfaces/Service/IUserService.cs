@@ -10,5 +10,6 @@ namespace Jyro.Core.Interfaces.Service
     public interface IUserService
     {
         User? GetById(Guid Id);
+        User? GetByEmail(string Email);
     }
 }

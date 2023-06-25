@@ -12,3 +12,8 @@ C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\refint\
 C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.pdb
 C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.genruntimeconfig.cache
 C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\ref\Jyro.Service.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Core.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Infra.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Core.pdb
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Infra.pdb
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.csproj.CopyComplete
