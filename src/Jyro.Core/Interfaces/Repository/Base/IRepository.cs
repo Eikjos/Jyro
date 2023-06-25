@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Jyro.Core.Interfaces.Repository.Base
 {
-    public interface IRepository
+    public interface IRepository<T> where T : class
     {
+        IQueryable<T> GetAll();
+        T? GetById(Guid Id);
+        T Insert(T entity);
+        T Update(T entity);
+        void Delete(Guid Id);
+        void Save();
     }
 }

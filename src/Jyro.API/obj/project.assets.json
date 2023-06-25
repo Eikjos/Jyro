@@ -1211,6 +1211,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "EntityFramework": "6.4.4",
+          "Jyro.Core": "1.0.0",
+          "Jyro.Infra": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Npgsql": "7.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.4"

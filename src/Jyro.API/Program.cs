@@ -1,3 +1,4 @@
+using Jyro.API.Middleware;
 using Jyro.Infra;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -66,6 +67,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -85,6 +87,8 @@ using (var scope = app.Services.CreateScope())
         context.Database.EnsureCreated();
     }
 }
+
+app.UseMiddleware<JWTMiddleware>();
 
 app.UseHttpsRedirection();
 

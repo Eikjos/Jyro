@@ -310,7 +310,14 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\Jyro.Core.csproj": {
+                "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\Jyro.Core.csproj"
+              },
+              "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Infra\\Jyro.Infra.csproj": {
+                "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Infra\\Jyro.Infra.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
