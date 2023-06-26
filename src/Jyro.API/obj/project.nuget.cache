@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "owvMLgSTMTGZyOvAs8htf4PFTzx915YYs/1Cq1LojQ4I92giH0S5dx6DHIBDwU3vKqW8vsgzxFk0ID8cEADzgw==",
+  "dgSpecHash": "spE6ICr5FukLyr8qNM3JxaUaXxxM9KB+Mdugjc7nNN7aAwTElMLyXLU3XvXX3+pCTcgoN/8A97ygh1b6oXQfPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.API\\Jyro.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\thoma\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\thoma\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\thoma\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",
     "C:\\Users\\thoma\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\thoma\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

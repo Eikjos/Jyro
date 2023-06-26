@@ -1,3 +1,4 @@
+using Jyro.API.Configuration;
 using Jyro.API.Middleware;
 using Jyro.Infra;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -12,6 +13,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+ServicesConfiguration.RegisterServices(builder.Services);
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -46,11 +49,10 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+
 builder.Services.AddRouting(opt => opt.LowercaseUrls = true);
-builder.Services.AddLogging(configure =>
-{
-    configure.AddConsole();
-});
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>

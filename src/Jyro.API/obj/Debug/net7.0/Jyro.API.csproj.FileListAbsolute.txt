@@ -74,3 +74,5 @@ C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.API\bin\Debug\net7.0\Microsoft.E
 C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.API\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.API\bin\Debug\net7.0\BCrypt.Net.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

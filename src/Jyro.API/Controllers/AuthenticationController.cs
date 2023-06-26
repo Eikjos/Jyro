@@ -24,7 +24,7 @@ namespace Jyro.API.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login(LoginModel model)
+        public IActionResult Login([FromBody] LoginModel model)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);

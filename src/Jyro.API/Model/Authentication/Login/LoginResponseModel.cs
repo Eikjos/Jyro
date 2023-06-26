@@ -1,5 +1,4 @@
-﻿using Jyro.Core.Entities;
-using Jyro.Core.Enum;
+﻿using Jyro.Core.Enum;
 
 namespace Jyro.API.Model.Authentication.Login
 {
@@ -11,7 +10,7 @@ namespace Jyro.API.Model.Authentication.Login
         public string Token { get; set; }
         public RoleType Role { get; set; }
 
-        public LoginResponseModel(User user, string token) {
+        public LoginResponseModel(Jyro.Core.Entities.User user, string token) {
             Id = user.Id;
             Firstname = user.Firstname;
             Lastname = user.Lastname;

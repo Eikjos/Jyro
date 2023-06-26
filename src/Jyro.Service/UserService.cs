@@ -22,5 +22,10 @@ namespace Jyro.Service
         {
             return _UserRepository.GetById(Id);
         }
+
+        public User Insert(User user)
+        {
+            return _UserRepository.Insert(user);
+        }
     }
 }
