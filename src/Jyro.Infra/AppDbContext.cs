@@ -22,6 +22,11 @@ namespace Jyro.Infra
         public DbSet<Time> Times { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>(user =>
+            {
+                user.HasMany(u => u.CommentariesWrote).WithOne(c => c.Author);
+                user.HasMany(u => u.CommentaryMentionned).WithMany(c => c.Mentionned);
+            });
         }
     }
 }

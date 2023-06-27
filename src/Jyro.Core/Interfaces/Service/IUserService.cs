@@ -12,5 +12,6 @@ namespace Jyro.Core.Interfaces.Service
         User? GetById(Guid Id);
         User? GetByEmail(string Email);
         User Insert(User user);
+        void Delete(User user);
     }
 }

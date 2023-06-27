@@ -10,6 +10,7 @@ namespace Jyro.Core.Enum
     {
         USER,
         PRODUCT_OWNER,
-        CUSTOMER
+        CUSTOMER,
+        ADMIN
     }
 }

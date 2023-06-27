@@ -27,5 +27,10 @@ namespace Jyro.Service
         {
             return _UserRepository.Insert(user);
         }
+
+        public void Delete(User user)
+        {
+            _UserRepository.Delete(user.Id);
+        }
     }
 }

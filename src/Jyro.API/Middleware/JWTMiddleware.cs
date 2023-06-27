@@ -22,10 +22,11 @@ namespace Jyro.API.Middleware
         {
             var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
             var userId = ValidateToken(token);
-            if (userId != null)
+            if (userId.HasValue)
             {
                 // attach user to context on successful jwt validation
-                context.Items["UserId"] = userService.GetById(userId.Value);
+                context.Items["UserId"] =userId.Value;
+                context.Items["Roles"] = userService.GetById(userId.Value).Role;
             }
 
             await _next(context);

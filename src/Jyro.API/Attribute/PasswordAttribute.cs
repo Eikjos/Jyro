@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 
 namespace Jyro.API.Attribute
@@ -7,11 +8,11 @@ namespace Jyro.API.Attribute
     {
         protected override ValidationResult IsValid(object? value, ValidationContext validationContext)
         {
+            ValidationResult result = new ValidationResult("");
             var errorsMessage = new List<string>();
 
             if (value == null)
                 return new ValidationResult("password.required");
-                
 
             string password = value.ToString();
 
@@ -30,10 +31,10 @@ namespace Jyro.API.Attribute
             if (!Regex.IsMatch(password, "[^a-zA-Z0-9]"))
                 errorsMessage.Add("password.special.character.required");
 
-            if (errorsMessage.Any())
+            if (!errorsMessage.Any())
                 return ValidationResult.Success;
 
-            return new ValidationResult(string.Join(" ", errorsMessage));
+            return new ValidationResult(string.Join(", ", errorsMessage));
         }
     }
 }

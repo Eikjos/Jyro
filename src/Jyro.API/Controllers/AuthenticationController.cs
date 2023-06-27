@@ -1,6 +1,7 @@
 ﻿using Jyro.API.Controllers.Base;
 using Jyro.API.Helper;
 using Jyro.API.Model.Authentication.Login;
+using Jyro.Core.Entities;
 using Jyro.Core.Interfaces.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -21,6 +22,23 @@ namespace Jyro.API.Controllers
         {
             _UserService = userService;
             _Configuration = configuration;
+        }
+
+        [Authorize]
+        [HttpGet("auth")]
+        public IActionResult Auth()
+        {
+            // refresh du token
+            var userId = (Guid) HttpContext.Items["UserId"];
+            var user  = _UserService.GetById(userId);
+            var cookieOptions = new CookieOptions();
+            cookieOptions.Expires = DateTime.Now.AddDays(7);
+            cookieOptions.Path = "/";
+            var token = JWTHelper.GenerateToken(user, _Configuration);
+
+            Response.Cookies.Append("token", token, cookieOptions);
+
+            return Ok();
         }
 
         [HttpPost("login")]
