@@ -1,5 +1,6 @@
 ﻿using Jyro.API.Controllers.Base;
 using Jyro.API.Helper;
+using Jyro.API.Model.Authentication.Auth;
 using Jyro.API.Model.Authentication.Login;
 using Jyro.Core.Entities;
 using Jyro.Core.Interfaces.Service;
@@ -38,7 +39,7 @@ namespace Jyro.API.Controllers
 
             Response.Cookies.Append("token", token, cookieOptions);
 
-            return Ok();
+            return Ok(new AuthResponseModel(user, token));
         }
 
         [HttpPost("login")]
