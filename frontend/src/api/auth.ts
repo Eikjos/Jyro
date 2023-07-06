@@ -4,7 +4,7 @@ import { Auth } from "../types/Auth";
 export const auth = (token: string) =>
   client
     .get<Auth>("authentification/auth", {
-      headers: { getAuthorization: token },
+      headers: { Authorization: token },
     })
     .then((r) => r.data);
 

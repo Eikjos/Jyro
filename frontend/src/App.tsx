@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { routes } from "./routes";
 import { UserContextProvider } from "./context/UserContext";
@@ -17,11 +17,11 @@ const queryClient = new QueryClient({
 export default function App() {
   return (
     <ChakraProvider>
-      <UserContextProvider>
-        <QueryClientProvider client={queryClient}>
+      <QueryClientProvider client={queryClient}>
+        <UserContextProvider>
           <RouterProvider router={router} />
-        </QueryClientProvider>
-      </UserContextProvider>
+        </UserContextProvider>
+      </QueryClientProvider>
     </ChakraProvider>
   );
 }

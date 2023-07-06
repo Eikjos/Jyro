@@ -20,7 +20,6 @@ const UserContext = createContext<UserContextType | null>(null);
 const UserContextProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User>();
   const [token, setToken] = useState<string>();
-  const queryClient = useQueryClient();
 
   const authentication = useQuery({
     queryFn: () => auth(token!),
