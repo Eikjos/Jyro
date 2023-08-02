@@ -54,8 +54,15 @@ const UserContextProvider = ({ children }: { children: ReactNode }) => {
     }
   }, []);
 
-  const login = (email: string, password: string) => {
-    mutationLogin.mutate({ email: email, passowrd: password });
+  const login = (email: string, password: string, onSuccess: () => void) => {
+    mutationLogin.mutate(
+      { email, password },
+      {
+        onSuccess: () => {
+          onSuccess();
+        },
+      }
+    );
   };
 
   const logout = () => {

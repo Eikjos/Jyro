@@ -1,5 +1,5 @@
 import { client } from "./client";
-import { Auth } from "../types/Auth";
+import { Auth, LoginRequestType } from "../types/Auth";
 
 export const auth = (token: string) =>
   client
@@ -8,7 +8,7 @@ export const auth = (token: string) =>
     })
     .then((r) => r.data);
 
-export const login = (json: { email: string; passowrd: string }) =>
+export const login = (json: LoginRequestType) =>
   client.post<Auth>("authentification/login", { json }, {}).then((r) => r.data);
 
 export const logout = (token: string) =>
