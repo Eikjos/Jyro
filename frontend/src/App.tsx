@@ -1,8 +1,10 @@
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import "@fontsource/roboto";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { routes } from "./routes";
 import { UserContextProvider } from "./context/UserContext";
 import { ChakraProvider } from "@chakra-ui/react";
+import theme from "./theme";
 
 const router = createBrowserRouter(routes);
 const queryClient = new QueryClient({
@@ -16,7 +18,7 @@ const queryClient = new QueryClient({
 
 export default function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <QueryClientProvider client={queryClient}>
         <UserContextProvider>
           <RouterProvider router={router} />

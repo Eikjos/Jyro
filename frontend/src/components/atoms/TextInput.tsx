@@ -1,8 +1,15 @@
-import { Button, Input, InputGroup, InputRightElement } from "@chakra-ui/react";
-import React, { useState } from "react";
+import {
+  Button,
+  Input,
+  InputGroup,
+  InputRightElement,
+  InputProps,
+  Box,
+} from "@chakra-ui/react";
+import React, { useReducer, useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 
-type TextInputProps = React.AllHTMLAttributes<HTMLInputElement> & {};
+type TextInputProps = InputProps;
 
 function TextInput({ ...props }: TextInputProps) {
   const [showPassword, setShowPassword] = useState<boolean>(false);
@@ -10,22 +17,33 @@ function TextInput({ ...props }: TextInputProps) {
   return (
     <InputGroup style={props.style}>
       <Input
-        type={props.type}
+        type={!showPassword ? props.type : "text"}
         value={props.value}
         onChange={props.onChange}
         name={props.name}
         placeholder={props.placeholder}
+        backgroundColor="white"
+        borderRadius={5}
+        padding={2}
+        variant={"outline"}
+        borderColor={"gray.300"}
+        borderWidth={1}
+        {...props}
       />
       {props.type === "password" && (
-        <InputRightElement>
-          <Button
-            h="1.75rem"
-            onClick={() => setShowPassword(!showPassword)}
-            backgroundColor={"#09489f"}
-          >
-            {showPassword && <ViewOffIcon color="white" />}
-            {!showPassword && <ViewIcon color="white" />}
-          </Button>
+        <InputRightElement
+          onClick={() => setShowPassword(!showPassword)}
+          backgroundColor={"#315A6B"}
+          borderTopRightRadius={5}
+          _hover={{ backgroundColor: "#15ABB9" }}
+          borderBottomRightRadius={5}
+        >
+          {showPassword && (
+            <ViewOffIcon color="white" width={"24px"} height={"24px"} />
+          )}
+          {!showPassword && (
+            <ViewIcon color="white" width={"24px"} height={"24px"} />
+          )}
         </InputRightElement>
       )}
     </InputGroup>
