@@ -1,10 +1,4 @@
-import {
-  ReactNode,
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import { ReactNode, createContext, useContext, useState } from "react";
 import { JWTCOOKIE, User } from "../types/User";
 import { UserContextType } from "../types/UserContextType";
 import Cookies from "js-cookie";
@@ -40,7 +34,7 @@ const UserContextProvider = ({ children }: { children: ReactNode }) => {
     },
   });
 
-  const authentication = useQuery({
+  useQuery({
     queryFn: () => auth(getToken()),
     queryKey: ["user", "@me"],
     onSuccess: (data) => {
