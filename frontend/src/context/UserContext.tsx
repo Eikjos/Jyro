@@ -5,7 +5,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import { User } from "../types/User";
+import { JWTCOOKIE, User } from "../types/User";
 import { UserContextType } from "../types/UserContextType";
 import Cookies from "js-cookie";
 import {
@@ -13,52 +13,54 @@ import {
   login as loginRequest,
   logout as logoutRequest,
 } from "../api/auth";
-import { useQueryClient, useQuery, useMutation } from "react-query";
+import { useQuery, useMutation } from "react-query";
 
 const UserContext = createContext<UserContextType | null>(null);
 
 const UserContextProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User>();
-  const [token, setToken] = useState<string>();
 
-  const authentication = useQuery({
-    queryFn: () => auth(token!),
-    queryKey: ["user", "@me"],
-  });
+  const setToken = (token: string) =>
+    Cookies.set(JWTCOOKIE, token, {
+      secure: true,
+      expires: new Date().setDate(new Date().getDate() + 7),
+      sameSite: "strict",
+    });
+  const getToken = () => Cookies.get(JWTCOOKIE) ?? "";
 
   const mutationLogin = useMutation({
     mutationFn: loginRequest,
-    onSuccess: (data) => {
-      setToken(data.token);
-      setUser(data.user);
-    },
   });
 
   const mutationLogout = useMutation({
-    mutationFn: () => logoutRequest(token!),
+    mutationFn: () => logoutRequest(getToken()),
     onSuccess: () => {
-      setToken(undefined);
+      Cookies.remove(JWTCOOKIE);
       setUser(undefined);
     },
   });
 
-  useEffect(() => {
-    const token = Cookies.get("token");
-    if (token) {
-      if (authentication.isError) {
-        setToken(undefined);
-      } else {
-        setUser(authentication.data?.user);
-        setToken(authentication.data?.token);
-      }
-    }
-  }, []);
+  const authentication = useQuery({
+    queryFn: () => auth(getToken()),
+    queryKey: ["user", "@me"],
+    onSuccess: (data) => {
+      setUser(data.user);
+      setToken(data.token);
+    },
+    onError: () => {
+      setUser(undefined);
+      Cookies.remove(JWTCOOKIE);
+    },
+  });
 
   const login = (email: string, password: string, onSuccess: () => void) => {
     mutationLogin.mutate(
       { email, password },
       {
-        onSuccess: () => {
+        onSuccess: (data) => {
+          setToken(data.token);
+          setUser(data.user);
+          console.log(data.token);
           onSuccess();
         },
       }
@@ -73,7 +75,7 @@ const UserContextProvider = ({ children }: { children: ReactNode }) => {
     user: user,
     login: login,
     logout: logout,
-    token: token,
+    getToken: getToken,
   };
 
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;

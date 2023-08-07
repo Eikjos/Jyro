@@ -9,13 +9,7 @@ namespace Jyro.API.Model.Authentication.Login
         public string Token { get; set; }
 
         public LoginResponseModel(Jyro.Core.Entities.User user, string token) {
-            User = new UserModel
-            {
-                Id = user.Id,
-                Firstname = user.Firstname,
-                Lastname = user.Lastname,
-                Role = user.Role,
-            };
+            User = new UserModel(user);
             Token = token;
         }
     }

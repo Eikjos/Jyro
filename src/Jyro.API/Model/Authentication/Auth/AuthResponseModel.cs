@@ -24,8 +24,8 @@ namespace Jyro.API.Model.Authentication.Auth
         public UserModel(Jyro.Core.Entities.User user)
         {
             Id = user.Id;
-            Firstname = user.FirstName;
-            Lastname = user.LastName;
+            Firstname = user.Firstname;
+            Lastname = user.Lastname;
             Role = user.Role;
         }
     }

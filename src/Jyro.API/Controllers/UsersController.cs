@@ -24,7 +24,7 @@ namespace Jyro.API.Controllers
         [HttpPost("register")]
         public IActionResult Register([FromBody] RegisterModel model)
         {
-            if (!ModelState.IsValid)
+                if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             if (_UserService.GetByEmail(model.Email) != null)

@@ -14,6 +14,14 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+// Add cors
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("localhost", builder => {
+        builder.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader();
+    });
+});
+
 ServicesConfiguration.RegisterServices(builder.Services);
 
 // Add services to the container.
@@ -80,6 +88,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthentication();
+app.UseCors("localhost");
 
 using (var scope = app.Services.CreateScope())
 {

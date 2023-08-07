@@ -10,7 +10,7 @@ import React from "react";
 
 const TextInput = React.forwardRef<HTMLInputElement, InputProps>(
   function TextInputComponent({ type, ...props }, ref) {
-    const [showPassword, setShowPassword] = useState<boolean>(true);
+    const [showPassword, setShowPassword] = useState<boolean>(false);
 
     return (
       <InputGroup style={props.style}>
