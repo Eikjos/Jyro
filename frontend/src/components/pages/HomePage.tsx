@@ -1,12 +1,10 @@
-import { useUserContext } from "../../context/UserContext";
+import { Menu } from "..";
 
 function HomePage() {
-  const { token } = useUserContext();
-
   return (
-    <div>
-      <h1>Bonjour Home</h1>
-    </div>
+    <>
+      <Menu width={"15%"} height={"100vh"} />
+    </>
   );
 }
 
