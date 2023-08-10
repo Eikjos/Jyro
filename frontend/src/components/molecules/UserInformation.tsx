@@ -1,0 +1,24 @@
+import { BoxProps, Box, Flex, Text, Icon } from "@chakra-ui/react";
+import { Avatar } from "../atoms/Avatar";
+import { MdOutlineArrowDropDown } from "react-icons/md";
+
+type UserInformationProps = {
+  title: string;
+  name: string;
+} & BoxProps;
+
+function UserInformation({ title, name, ...props }: UserInformationProps) {
+  return (
+    <Box {...props}>
+      <Flex flexDirection={"row"} alignItems={"center"} width="150px">
+        <Text variant="lg" color={"white"}>
+          {name}
+        </Text>
+        <Avatar title={title} marginLeft={"11px"} />
+        <Icon as={MdOutlineArrowDropDown} boxSize={"24px"} color={"white"} />
+      </Flex>
+    </Box>
+  );
+}
+
+export { UserInformation };

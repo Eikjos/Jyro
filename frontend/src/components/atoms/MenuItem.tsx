@@ -1,5 +1,5 @@
 import { Link as ReactRouterLink } from "react-router-dom";
-import { Icon, Link, Text, textDecoration } from "@chakra-ui/react";
+import { Icon, Link, Text } from "@chakra-ui/react";
 import { match } from "ts-pattern";
 import { MdDashboard } from "react-icons/md";
 import {

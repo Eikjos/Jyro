@@ -1,11 +1,7 @@
-import { Menu } from "..";
+import { MenuTemplate } from "..";
 
 function HomePage() {
-  return (
-    <>
-      <Menu width={"15%"} height={"100vh"} />
-    </>
-  );
+  return <MenuTemplate title="TH" name="Hamelin"></MenuTemplate>;
 }
 
 export { HomePage };
