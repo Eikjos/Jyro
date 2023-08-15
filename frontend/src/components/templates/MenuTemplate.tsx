@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { Menu } from "..";
 import { UserInformation } from "../molecules/UserInformation";
@@ -23,14 +23,15 @@ function MenuTemplate({ title, name, children }: MenuTemplateProps) {
       >
         <UserInformation title={title} name={name} />
       </Box>
-      <Menu
-        zIndex={5}
-        width={"15%"}
-        height={"100%"}
-        backgroundColor={"white"}
-        marginTop={"-75px"}
-      />
-      {children}
+      <Flex direction={"row"} height={"calc(100vh - 75px)"}>
+        <Menu
+          zIndex={5}
+          width={"15%"}
+          backgroundColor={"white"}
+          marginTop={"-75px"}
+        />
+        <Box>{children}</Box>
+      </Flex>
     </Box>
   );
 }

@@ -2,12 +2,12 @@ import { Box, BoxProps, Text } from "@chakra-ui/react";
 
 type AvatarProps = {
   title: string;
+  variant: "2xl" | "sm";
 } & BoxProps;
 
-function Avatar({ title, ...props }: AvatarProps) {
+function Avatar({ title, variant, ...props }: AvatarProps) {
   return (
     <Box
-      {...props}
       borderRadius={"full"}
       width={9}
       height={9}
@@ -15,8 +15,9 @@ function Avatar({ title, ...props }: AvatarProps) {
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
+      {...props}
     >
-      <Text variant={"2xl"} color="black" fontWeight={700}>
+      <Text variant={variant} color="black" fontWeight={700}>
         {title}
       </Text>
     </Box>
