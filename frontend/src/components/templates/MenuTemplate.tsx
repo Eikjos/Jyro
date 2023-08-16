@@ -26,7 +26,7 @@ function MenuTemplate({ title, name, children }: MenuTemplateProps) {
       <Flex direction={"row"} height={"calc(100vh - 75px)"}>
         <Menu
           zIndex={5}
-          width={"15%"}
+          width={"20%"}
           backgroundColor={"white"}
           marginTop={"-75px"}
         />

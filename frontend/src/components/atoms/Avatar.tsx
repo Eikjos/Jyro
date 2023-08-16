@@ -2,7 +2,7 @@ import { Box, BoxProps, Text } from "@chakra-ui/react";
 
 type AvatarProps = {
   title: string;
-  variant: "2xl" | "sm";
+  variant: "xl" | "sm";
 } & BoxProps;
 
 function Avatar({ title, variant, ...props }: AvatarProps) {

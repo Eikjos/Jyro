@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, Heading } from "@chakra-ui/react";
 import { TimeIndicator, Avatar } from "..";
 import { User } from "../../types/User";
 import { match } from "ts-pattern";
@@ -29,7 +29,9 @@ function TaskItem({
       padding={"10px"}
       borderRadius={"10px"}
     >
-      <Text variant={"sm"}>{projectName}</Text>
+      <Heading as="h6" variant="xs">
+        {projectName}
+      </Heading>
       <Text variant={"xs"} height={"40px"}>
         {name}
       </Text>

@@ -14,7 +14,7 @@ function UserInformation({ title, name, ...props }: UserInformationProps) {
         <Text variant="lg" color={"white"}>
           {name}
         </Text>
-        <Avatar variant="2xl" title={title} marginLeft={"11px"} />
+        <Avatar variant="xl" title={title} marginLeft={"11px"} />
         <Icon as={MdOutlineArrowDropDown} boxSize={"24px"} color={"white"} />
       </Flex>
     </Box>

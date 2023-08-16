@@ -6,6 +6,8 @@ export * from "./atoms/Avatar";
 export * from "./molecules/Menu";
 export * from "./molecules/UserInformation";
 export * from "./molecules/TaskItem";
+export * from "./molecules/NotificationItem";
+export * from "./molecules/NewsItem";
 export * from "./templates/BoxTemplate";
 export * from "./templates/MenuTemplate";
 export * from "./pages/HomePage";
