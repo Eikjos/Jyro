@@ -17,6 +17,7 @@ function BoxTemplate({ title, height, width, children }: BoxTemplateProps) {
       paddingTop="28px"
       paddingLeft="30px"
       paddingRight="30px"
+      paddingBottom="30px"
       backgroundColor={"white"}
     >
       <Heading
@@ -28,7 +29,18 @@ function BoxTemplate({ title, height, width, children }: BoxTemplateProps) {
       >
         {title}
       </Heading>
-      <Flex direction={"column"} alignItems={"center"}>
+      <Flex
+        direction={"column"}
+        alignItems={"center"}
+        gap={"10px"}
+        overflowY={"auto"}
+        height={"calc(100% - 75px)"}
+        css={{
+          "::-webkit-scrollbar": {
+            display: "none",
+          },
+        }}
+      >
         {children}
       </Flex>
     </Box>

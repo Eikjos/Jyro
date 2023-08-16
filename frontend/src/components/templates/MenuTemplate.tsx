@@ -30,7 +30,7 @@ function MenuTemplate({ title, name, children }: MenuTemplateProps) {
           backgroundColor={"white"}
           marginTop={"-75px"}
         />
-        <Box>{children}</Box>
+        <Box width={"100%"}>{children}</Box>
       </Flex>
     </Box>
   );

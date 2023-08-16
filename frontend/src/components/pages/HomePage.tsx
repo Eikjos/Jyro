@@ -1,55 +1,134 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import { Avatar, BoxTemplate, MenuTemplate, TimeIndicator } from "..";
+import { Flex } from "@chakra-ui/react";
+import { BoxTemplate, MenuTemplate, TaskItem } from "..";
 
 function HomePage() {
   return (
     <MenuTemplate title="TH" name="Hamelin">
-      <BoxTemplate title="Tâches en cours" width={"450px"} height={"95%"}>
-        <Box
-          backgroundColor="#EEEEEE"
-          width={"100%"}
-          padding={"10px"}
-          borderRadius={"10px"}
-        >
-          <Text variant={"sm"}>Nom Projet</Text>
-          <Text variant={"xs"} height={"40px"}>
-            Nom de la tâches
-          </Text>
-          <Flex
-            direction={"row"}
-            alignItems={"center"}
-            width={"100%"}
-            justifyContent="space-between"
-          >
-            <Flex direction="row">
-              <Flex direction={"row"} alignItems={"center"} marginRight={"8px"}>
-                <Text variant={"xs"} color="gray" marginRight={"8px"}>
-                  Consommé
-                </Text>
-                <TimeIndicator number={12} />
-              </Flex>
-              <Flex direction={"row"} alignItems={"center"} marginRight={"8px"}>
-                <Text variant={"xs"} color="gray" marginRight={"8px"}>
-                  Restant
-                </Text>
-                <TimeIndicator number={12} />
-              </Flex>
-              <Flex direction={"row"} alignItems={"center"}>
-                <Text variant={"xs"} color="gray" marginRight={"8px"}>
-                  Originel
-                </Text>
-                <TimeIndicator number={12} />
-              </Flex>
-            </Flex>
-            <Flex direction={"row"} alignItems={"center"}>
-              <Text variant={"xs"} color="red" marginRight={"5px"}>
-                Haute
-              </Text>
-              <Avatar title="TH" variant="sm" width={"25px"} height={"25px"} />
-            </Flex>
-          </Flex>
-        </Box>
-      </BoxTemplate>
+      <Flex
+        direction={"row"}
+        width={"100%"}
+        height="100%"
+        padding={"35px"}
+        alignItems={"center"}
+        gap="35px"
+      >
+        <BoxTemplate title="Tâches en cours" width={"650px"} height={"95%"}>
+          <TaskItem
+            name="Nom de la tâche"
+            projectName="Nom du projet"
+            remaining={12}
+            original={12}
+            consumed={12}
+            priority="hight"
+            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+          />
+          <TaskItem
+            name="Nom de la tâche"
+            projectName="Nom du projet"
+            remaining={12}
+            original={12}
+            consumed={12}
+            priority="hight"
+            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+          />
+          <TaskItem
+            name="Nom de la tâche"
+            projectName="Nom du projet"
+            remaining={12}
+            original={12}
+            consumed={12}
+            priority="medium"
+            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+          />
+          <TaskItem
+            name="Nom de la tâche"
+            projectName="Nom du projet"
+            remaining={12}
+            original={12}
+            consumed={12}
+            priority="low"
+            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+          />
+          <TaskItem
+            name="Nom de la tâche"
+            projectName="Nom du projet"
+            remaining={12}
+            original={12}
+            consumed={12}
+            priority="medium"
+            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+          />
+          <TaskItem
+            name="Nom de la tâche"
+            projectName="Nom du projet"
+            remaining={12}
+            original={12}
+            consumed={12}
+            priority="low"
+            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+          />
+        </BoxTemplate>
+        <Flex direction="column" gap="35px" width="100%" height="95%">
+          <BoxTemplate title="Notifications" width="100%" height="50%">
+            <TaskItem
+              name="Nom de la tâche"
+              projectName="Nom du projet"
+              remaining={12}
+              original={12}
+              consumed={12}
+              priority="hight"
+              user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            />
+            <TaskItem
+              name="Nom de la tâche"
+              projectName="Nom du projet"
+              remaining={12}
+              original={12}
+              consumed={12}
+              priority="medium"
+              user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            />
+            <TaskItem
+              name="Nom de la tâche"
+              projectName="Nom du projet"
+              remaining={12}
+              original={12}
+              consumed={12}
+              priority="low"
+              user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            />
+          </BoxTemplate>
+          <BoxTemplate title="Actualités" width="100%" height="50%">
+            <TaskItem
+              name="Nom de la tâche"
+              projectName="Nom du projet"
+              remaining={12}
+              original={12}
+              consumed={12}
+              priority="hight"
+              user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            />
+            <TaskItem
+              name="Nom de la tâche"
+              projectName="Nom du projet"
+              remaining={12}
+              original={12}
+              consumed={12}
+              priority="medium"
+              user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            />
+            <TaskItem
+              name="Nom de la tâche"
+              projectName="Nom du projet"
+              remaining={12}
+              original={12}
+              consumed={12}
+              priority="low"
+              user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            />
+          </BoxTemplate>
+        </Flex>
+      </Flex>
     </MenuTemplate>
   );
 }

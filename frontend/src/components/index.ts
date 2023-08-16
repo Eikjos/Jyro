@@ -5,6 +5,7 @@ export * from "./atoms/TimeIndicator";
 export * from "./atoms/Avatar";
 export * from "./molecules/Menu";
 export * from "./molecules/UserInformation";
+export * from "./molecules/TaskItem";
 export * from "./templates/BoxTemplate";
 export * from "./templates/MenuTemplate";
 export * from "./pages/HomePage";

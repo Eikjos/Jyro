@@ -25,10 +25,13 @@ function MenuItem({ title, path, icon, isActif }: MenuItemProps) {
       alignItems={"center"}
       backgroundColor={isActif ? "#EEEEEE" : "#FFFFFF"}
       borderColor={isActif ? "#315A6B" : "#EEEEEE"}
-      borderWidth={1}
+      borderWidth={isActif ? 1 : 0}
+      borderTopWidth={1}
+      borderBottomWidth={1}
       _hover={{ textDecoration: "none" }}
       as={ReactRouterLink}
       to={path}
+      width={"100%"}
     >
       {match(icon)
         .with("board", () => (
