@@ -68,8 +68,8 @@ function HomePage() {
             user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
           />
         </BoxTemplate>
-        <Flex direction="column" gap="35px" width="100%" height="95%">
-          <BoxTemplate title="Notifications" width="100%" height="50%">
+        <Flex direction="column" gap="4%" width="100%" height="95%">
+          <BoxTemplate title="Notifications" width="100%" height="48%">
             <TaskItem
               name="Nom de la tâche"
               projectName="Nom du projet"
@@ -98,7 +98,7 @@ function HomePage() {
               user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
             />
           </BoxTemplate>
-          <BoxTemplate title="Actualités" width="100%" height="50%">
+          <BoxTemplate title="Actualités" width="100%" height="48%">
             <TaskItem
               name="Nom de la tâche"
               projectName="Nom du projet"
