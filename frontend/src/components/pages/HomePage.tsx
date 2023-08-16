@@ -1,24 +1,11 @@
-import { Flex } from "@chakra-ui/react";
-import {
-  BoxTemplate,
-  MenuTemplate,
-  NewsItem,
-  NotificationItem,
-  TaskItem,
-} from "~/components/index";
+import { Flex } from '@chakra-ui/react';
+import { BoxTemplate, MenuTemplate, NewsItem, NotificationItem, TaskItem } from '@components';
 
 function HomePage() {
   return (
     <MenuTemplate title="TH" name="Hamelin">
-      <Flex
-        direction={"row"}
-        width={"100%"}
-        height="100%"
-        padding={"35px"}
-        alignItems={"center"}
-        gap="35px"
-      >
-        <BoxTemplate title="Tâches en cours" width={"650px"} height={"95%"}>
+      <Flex direction={'row'} width={'100%'} height="100%" padding={'35px'} alignItems={'center'} gap="35px">
+        <BoxTemplate title="Tâches en cours" width={'650px'} height={'95%'}>
           <TaskItem
             name="Nom de la tâche"
             projectName="Nom du projet"
@@ -26,7 +13,7 @@ function HomePage() {
             original={12}
             consumed={12}
             priority="hight"
-            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            user={{ id: '', firstname: 'Thomas', lastname: 'Hamelin' }}
           />
           <TaskItem
             name="Nom de la tâche"
@@ -35,7 +22,7 @@ function HomePage() {
             original={12}
             consumed={12}
             priority="hight"
-            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            user={{ id: '', firstname: 'Thomas', lastname: 'Hamelin' }}
           />
           <TaskItem
             name="Nom de la tâche"
@@ -44,7 +31,7 @@ function HomePage() {
             original={12}
             consumed={12}
             priority="medium"
-            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            user={{ id: '', firstname: 'Thomas', lastname: 'Hamelin' }}
           />
           <TaskItem
             name="Nom de la tâche"
@@ -53,7 +40,7 @@ function HomePage() {
             original={12}
             consumed={12}
             priority="low"
-            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            user={{ id: '', firstname: 'Thomas', lastname: 'Hamelin' }}
           />
           <TaskItem
             name="Nom de la tâche"
@@ -62,7 +49,7 @@ function HomePage() {
             original={12}
             consumed={12}
             priority="medium"
-            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            user={{ id: '', firstname: 'Thomas', lastname: 'Hamelin' }}
           />
           <TaskItem
             name="Nom de la tâche"
@@ -71,7 +58,7 @@ function HomePage() {
             original={12}
             consumed={12}
             priority="low"
-            user={{ id: "", firstname: "Thomas", lastname: "Hamelin" }}
+            user={{ id: '', firstname: 'Thomas', lastname: 'Hamelin' }}
           />
         </BoxTemplate>
         <Flex direction="column" gap="4%" width="100%" height="95%">

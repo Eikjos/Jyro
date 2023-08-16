@@ -1,5 +1,5 @@
-import { Box, Heading, Flex } from "@chakra-ui/react";
-import { ReactNode } from "react";
+import { Box, Flex, Heading } from '@chakra-ui/react';
+import { ReactNode } from 'react';
 
 type BoxTemplateProps = {
   title: string;
@@ -18,26 +18,20 @@ function BoxTemplate({ title, height, width, children }: BoxTemplateProps) {
       paddingLeft="30px"
       paddingRight="30px"
       paddingBottom="30px"
-      backgroundColor={"white"}
+      backgroundColor={'white'}
     >
-      <Heading
-        as="h2"
-        variant={"lg"}
-        color="#1C495C"
-        textAlign={"center"}
-        marginBottom={"35px"}
-      >
+      <Heading as="h2" variant={'lg'} color="#1C495C" textAlign={'center'} marginBottom={'35px'}>
         {title}
       </Heading>
       <Flex
-        direction={"column"}
-        alignItems={"center"}
-        gap={"10px"}
-        overflowY={"auto"}
-        height={"calc(100% - 75px)"}
+        direction={'column'}
+        alignItems={'center'}
+        gap={'10px'}
+        overflowY={'auto'}
+        height={'calc(100% - 75px)'}
         css={{
-          "::-webkit-scrollbar": {
-            display: "none",
+          '::-webkit-scrollbar': {
+            display: 'none',
           },
         }}
       >

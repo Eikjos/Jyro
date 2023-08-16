@@ -1,13 +1,9 @@
-import { ReactNode, createContext, useContext, useState } from "react";
-import { JWTCOOKIE, User } from "../types/User";
-import { UserContextType } from "../types/UserContextType";
-import Cookies from "js-cookie";
-import {
-  auth,
-  login as loginRequest,
-  logout as logoutRequest,
-} from "../api/auth";
-import { useQuery, useMutation } from "react-query";
+import { auth, login as loginRequest, logout as logoutRequest } from '../api/auth';
+import { JWTCOOKIE, User } from '../types/User';
+import { UserContextType } from '../types/UserContextType';
+import Cookies from 'js-cookie';
+import { ReactNode, createContext, useContext, useState } from 'react';
+import { useMutation, useQuery } from 'react-query';
 
 const UserContext = createContext<UserContextType | null>(null);
 
@@ -18,9 +14,9 @@ const UserContextProvider = ({ children }: { children: ReactNode }) => {
     Cookies.set(JWTCOOKIE, token, {
       secure: true,
       expires: new Date().setDate(new Date().getDate() + 7),
-      sameSite: "strict",
+      sameSite: 'strict',
     });
-  const getToken = () => Cookies.get(JWTCOOKIE) ?? "";
+  const getToken = () => Cookies.get(JWTCOOKIE) ?? '';
 
   const mutationLogin = useMutation({
     mutationFn: loginRequest,
@@ -36,7 +32,7 @@ const UserContextProvider = ({ children }: { children: ReactNode }) => {
 
   useQuery({
     queryFn: () => auth(getToken()),
-    queryKey: ["user", "@me"],
+    queryKey: ['user', '@me'],
     onSuccess: (data) => {
       setUser(data.user);
       setToken(data.token);
@@ -57,7 +53,7 @@ const UserContextProvider = ({ children }: { children: ReactNode }) => {
           console.log(data.token);
           onSuccess();
         },
-      }
+      },
     );
   };
 

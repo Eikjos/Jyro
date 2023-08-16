@@ -11,4 +11,4 @@ export type RegisterRequestType = {
   password: string;
 };
 
-export const JWTCOOKIE = "token";
+export const JWTCOOKIE = 'token';

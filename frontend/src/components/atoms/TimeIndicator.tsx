@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text } from '@chakra-ui/react';
 
 type TimeIndicatorProps = {
   number: number;
@@ -7,15 +7,15 @@ type TimeIndicatorProps = {
 function TimeIndicator({ number }: TimeIndicatorProps) {
   return (
     <Box
-      backgroundColor={"white"}
+      backgroundColor={'white'}
       width="20px"
       height="20px"
-      borderRadius={"full"}
-      display={"flex"}
-      justifyContent={"center"}
+      borderRadius={'full'}
+      display={'flex'}
+      justifyContent={'center'}
       alignItems="center"
     >
-      <Text variant={"xs"} textAlign={"center"} margin={0}>
+      <Text variant={'xs'} textAlign={'center'} margin={0}>
         {number}
       </Text>
     </Box>

@@ -1,10 +1,10 @@
-import "@fontsource/roboto";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { routes } from "./routes";
-import { UserContextProvider } from "./context/UserContext";
-import { ChakraProvider } from "@chakra-ui/react";
-import theme from "./theme";
+import { UserContextProvider } from './context/UserContext';
+import { routes } from './routes';
+import theme from './theme';
+import { ChakraProvider } from '@chakra-ui/react';
+import '@fontsource/roboto';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter(routes);
 const queryClient = new QueryClient({
