@@ -8,14 +8,14 @@ import {
   FormLabel,
   FormErrorMessage,
 } from "@chakra-ui/react";
-import background from "../../assets/png/background-login.png";
-import { Icon, TextInput } from "..";
+import background from "~/assets/png/background-login.png";
+import { Icon, TextInput } from "~/components/index";
 import { Link, useNavigate } from "react-router-dom";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { LoginRequestType } from "../../types/Auth";
-import { useUserContext } from "../../context/UserContext";
+import { LoginRequestType } from "~/types/Auth";
+import { useUserContext } from "~/context/UserContext";
 
 function LoginPage() {
   const { login } = useUserContext();

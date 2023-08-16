@@ -1,5 +1,5 @@
 import { Box, BoxProps, Flex } from "@chakra-ui/react";
-import { Icon, MenuItem } from "..";
+import { Icon, MenuItem } from "~/components/index";
 
 function Menu({ ...props }: BoxProps) {
   return (

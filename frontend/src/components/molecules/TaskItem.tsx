@@ -1,6 +1,6 @@
 import { Box, Flex, Text, Heading } from "@chakra-ui/react";
-import { TimeIndicator, Avatar } from "..";
-import { User } from "../../types/User";
+import { TimeIndicator, Avatar } from "~/components/index";
+import { User } from "~/types/User";
 import { match } from "ts-pattern";
 
 type TaskItemProps = {

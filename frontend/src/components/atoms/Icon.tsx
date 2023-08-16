@@ -1,5 +1,5 @@
 import { Box, Heading, Image } from "@chakra-ui/react";
-import icon from "../../assets/png/icon.png";
+import icon from "~/assets/png/icon.png";
 
 function Icon() {
   return (

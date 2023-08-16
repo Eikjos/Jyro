@@ -5,7 +5,7 @@ import {
   NewsItem,
   NotificationItem,
   TaskItem,
-} from "..";
+} from "~/components/index";
 
 function HomePage() {
   return (

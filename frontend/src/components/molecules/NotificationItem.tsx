@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Icon, Heading } from "@chakra-ui/react";
+import { Box, Flex, Icon, Heading, Text } from "@chakra-ui/react";
 import { MdCircleNotifications } from "react-icons/md";
 
 type NotificationItempProps = {

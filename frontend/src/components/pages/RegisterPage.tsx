@@ -8,15 +8,15 @@ import {
   FormLabel,
   FormErrorMessage,
 } from "@chakra-ui/react";
-import background from "../../assets/png/background-login.png";
-import { Icon, TextInput } from "..";
+import background from "~/assets/png/background-login.png";
+import { Icon, TextInput } from "~/components/index";
 import { Link, useNavigate } from "react-router-dom";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { RegisterRequestType } from "../../types/User";
+import { RegisterRequestType } from "~/types/User";
 import { useMutation } from "react-query";
-import { register as registerReq } from "../../api/user";
+import { register as registerReq } from "~/api/user";
 
 function RegisterPage() {
   const navigation = useNavigate();

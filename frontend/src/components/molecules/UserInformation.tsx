@@ -1,5 +1,5 @@
 import { BoxProps, Box, Flex, Text, Icon } from "@chakra-ui/react";
-import { Avatar } from "../atoms/Avatar";
+import { Avatar } from "~/components/index";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 
 type UserInformationProps = {
