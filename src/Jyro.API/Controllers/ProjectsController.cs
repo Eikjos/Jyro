@@ -5,8 +5,8 @@ using Jyro.API.Model.User.Register;
 using Jyro.Core.Entities;
 using Jyro.Core.Enum;
 using Jyro.Core.Interfaces.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Internal;
 
 namespace Jyro.API.Controllers
 {
@@ -20,6 +20,7 @@ namespace Jyro.API.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         [AuthorizeRole(new[] { RoleType.PRODUCT_OWNER, RoleType.ADMIN, RoleType.USER })]
         public IActionResult Create([FromBody] ProjectModel model) 
         {
@@ -32,6 +33,15 @@ namespace Jyro.API.Controllers
             project = _ProjectService.Create(project);
 
             return Ok(project);
+        }
+
+        [HttpGet]
+        [Authorize]
+        [AuthorizeRole(new[] { RoleType.PRODUCT_OWNER, RoleType.USER, RoleType.ADMIN})]
+        public IActionResult GetAllByUserId()
+        {
+            var userId = (Guid) HttpContext.Items["UserId"];
+            return Ok(_ProjectService.GetAllByUserId(userId));
         }
     }
 }

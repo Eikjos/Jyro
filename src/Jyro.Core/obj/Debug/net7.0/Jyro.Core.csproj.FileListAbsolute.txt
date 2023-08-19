@@ -26,3 +26,17 @@ C:/Users/thoma/Documents/Projects/Jyro/src/Jyro.Core/obj/Debug/net7.0/ref/Jyro.C
 /Users/thomas/Documents/projects/Jyro/src/Jyro.Core/obj/Debug/net7.0/Jyro.Core.pdb
 /Users/thomas/Documents/projects/Jyro/src/Jyro.Core/obj/Debug/net7.0/Jyro.Core.genruntimeconfig.cache
 /Users/thomas/Documents/projects/Jyro/src/Jyro.Core/obj/Debug/net7.0/ref/Jyro.Core.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\bin\Debug\net7.0\Jyro.Core.deps.json
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\bin\Debug\net7.0\Jyro.Core.runtimeconfig.json
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\bin\Debug\net7.0\Jyro.Core.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\bin\Debug\net7.0\Jyro.Core.pdb
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\obj\Debug\net7.0\Jyro.Core.csproj.AssemblyReference.cache
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\obj\Debug\net7.0\Jyro.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\obj\Debug\net7.0\Jyro.Core.AssemblyInfoInputs.cache
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\obj\Debug\net7.0\Jyro.Core.AssemblyInfo.cs
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\obj\Debug\net7.0\Jyro.Core.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\obj\Debug\net7.0\Jyro.Core.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\obj\Debug\net7.0\refint\Jyro.Core.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\obj\Debug\net7.0\Jyro.Core.pdb
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\obj\Debug\net7.0\Jyro.Core.genruntimeconfig.cache
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Core\obj\Debug\net7.0\ref\Jyro.Core.dll

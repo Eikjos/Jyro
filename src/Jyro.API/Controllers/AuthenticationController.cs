@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using System.IdentityModel.Tokens.Jwt;
 using System.Reflection.Metadata.Ecma335;
 
 namespace Jyro.API.Controllers

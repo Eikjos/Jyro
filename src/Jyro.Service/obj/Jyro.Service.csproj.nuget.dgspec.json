@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/thomas/Documents/projects/Jyro/src/Jyro.Service/Jyro.Service.csproj": {}
+    "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Service\\Jyro.Service.csproj": {}
   },
   "projects": {
-    "/Users/thomas/Documents/projects/Jyro/src/Jyro.Core/Jyro.Core.csproj": {
+    "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\Jyro.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Core/Jyro.Core.csproj",
+        "projectUniqueName": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\Jyro.Core.csproj",
         "projectName": "Jyro.Core",
-        "projectPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Core/Jyro.Core.csproj",
-        "packagesPath": "/Users/thomas/.nuget/packages/",
-        "outputPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Core/obj/",
+        "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\Jyro.Core.csproj",
+        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/thomas/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -71,34 +73,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/Jyro.Infra.csproj": {
+    "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Infra\\Jyro.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/Jyro.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Infra\\Jyro.Infra.csproj",
         "projectName": "Jyro.Infra",
-        "projectPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/Jyro.Infra.csproj",
-        "packagesPath": "/Users/thomas/.nuget/packages/",
-        "outputPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/obj/",
+        "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Infra\\Jyro.Infra.csproj",
+        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/thomas/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/thomas/Documents/projects/Jyro/src/Jyro.Core/Jyro.Core.csproj": {
-                "projectPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Core/Jyro.Core.csproj"
+              "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\Jyro.Core.csproj": {
+                "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\Jyro.Core.csproj"
               }
             }
           }
@@ -182,37 +186,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/thomas/Documents/projects/Jyro/src/Jyro.Service/Jyro.Service.csproj": {
+    "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Service\\Jyro.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Service/Jyro.Service.csproj",
+        "projectUniqueName": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Service\\Jyro.Service.csproj",
         "projectName": "Jyro.Service",
-        "projectPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Service/Jyro.Service.csproj",
-        "packagesPath": "/Users/thomas/.nuget/packages/",
-        "outputPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Service/obj/",
+        "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Service\\Jyro.Service.csproj",
+        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/thomas/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/thomas/Documents/projects/Jyro/src/Jyro.Core/Jyro.Core.csproj": {
-                "projectPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Core/Jyro.Core.csproj"
+              "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\Jyro.Core.csproj": {
+                "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\Jyro.Core.csproj"
               },
-              "/Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/Jyro.Infra.csproj": {
-                "projectPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/Jyro.Infra.csproj"
+              "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Infra\\Jyro.Infra.csproj": {
+                "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Infra\\Jyro.Infra.csproj"
               }
             }
           }
@@ -260,7 +266,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

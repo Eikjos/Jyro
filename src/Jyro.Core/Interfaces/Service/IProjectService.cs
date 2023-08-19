@@ -10,5 +10,6 @@ namespace Jyro.Core.Interfaces.Service
     public interface IProjectService
     {
         Project Create(Project project);
+        IEnumerable<Project> GetAllByUserId(Guid userId);
     }
 }

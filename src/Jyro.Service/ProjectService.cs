@@ -20,6 +20,11 @@ namespace Jyro.Service
         public Project Create(Project project)
         {
             return _ProjectRepository.Insert(project);
-        } 
+        }
+
+        public IEnumerable<Project> GetAllByUserId(Guid userId)
+        {
+            return _ProjectRepository.GetAllByUserId(userId);
+        }
     }
 }
