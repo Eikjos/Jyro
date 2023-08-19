@@ -19,7 +19,7 @@ namespace Jyro.Service
 
         public Project Create(Project project)
         {
-            return _ProjectRepository.Create(project);
+            return _ProjectRepository.Insert(project);
         } 
     }
 }

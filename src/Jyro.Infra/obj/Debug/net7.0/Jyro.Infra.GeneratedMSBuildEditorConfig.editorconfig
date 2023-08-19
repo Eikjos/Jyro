@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Jyro.Infra
-build_property.ProjectDir = C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.Infra\
+build_property.ProjectDir = /Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/

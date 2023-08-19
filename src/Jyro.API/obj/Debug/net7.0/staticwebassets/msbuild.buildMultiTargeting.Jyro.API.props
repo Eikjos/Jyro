@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\Jyro.API.props" />
+  <Import Project="../build/Jyro.API.props" />
 </Project>
