@@ -1,4 +1,4 @@
-import { HomePage, LoginPage, RegisterPage } from './components';
+import { HomePage, LoginPage, ProjectListPage, RegisterPage } from '@components';
 import { RouteObject } from 'react-router-dom';
 
 export const routes: RouteObject[] = [
@@ -13,5 +13,9 @@ export const routes: RouteObject[] = [
   {
     path: '/register',
     element: <RegisterPage />,
+  },
+  {
+    path: '/projects',
+    element: <ProjectListPage />,
   },
 ];

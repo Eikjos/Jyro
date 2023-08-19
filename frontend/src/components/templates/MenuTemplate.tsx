@@ -6,10 +6,11 @@ import { ReactNode } from 'react';
 type MenuTemplateProps = {
   title: string;
   name: string;
+  route: 'default' | 'projects' | 'stats' | 'talks' | 'settings';
   children?: ReactNode;
 };
 
-function MenuTemplate({ title, name, children }: MenuTemplateProps) {
+function MenuTemplate({ title, name, route, children }: MenuTemplateProps) {
   return (
     <Box backgroundColor={'#EEEEEE'} height="100vh" width="100%">
       <Box
@@ -24,7 +25,7 @@ function MenuTemplate({ title, name, children }: MenuTemplateProps) {
         <UserInformation title={title} name={name} />
       </Box>
       <Flex direction={'row'} height={'calc(100vh - 75px)'}>
-        <Menu zIndex={5} width={'20%'} backgroundColor={'white'} marginTop={'-75px'} />
+        <Menu zIndex={5} width={'20%'} backgroundColor={'white'} marginTop={'-75px'} route={route} />
         <Box width={'100%'}>{children}</Box>
       </Flex>
     </Box>

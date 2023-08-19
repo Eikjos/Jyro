@@ -15,6 +15,7 @@ namespace Jyro.Core.Entities
         public string Email { get; set; }
         public string Password { get; set; }
         public RoleType Role { get; set; }
+        public virtual ICollection<Project> Projects { get; set; }
         public virtual ICollection<Commentary> CommentariesWrote { get; set; }
         public virtual ICollection<Commentary> CommentaryMentionned { get; set; }
     }
