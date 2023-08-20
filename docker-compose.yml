@@ -1,0 +1,38 @@
+services:
+  database:
+    container_name: jyro-database
+    image: postgres:alpine
+    environment:
+      - POSTGRES_USER=jyro
+      - POSTGRES_PASSWORD=Pwd.toto27
+      - POSTGRES_DB=jyro
+    ports:
+      - "5432:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+  backend:
+    container_name: jyro-backend
+    depends_on:
+      - database
+    build:
+      context: ./src
+    ports:
+      - "44336:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=Pwd.toto27
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+    volumes:
+      - ~/%USERPROFILE%/.aspnet/https:/https:ro
+  frontend:
+    container_name: jyro-frontend
+    depends_on:
+      - backend
+    build:
+      context: ./frontend
+    environment:
+      - VITE_API_URL=https://localhost:8080/api
+    ports:
+      - "3000:80"
+volumes:
+  db:

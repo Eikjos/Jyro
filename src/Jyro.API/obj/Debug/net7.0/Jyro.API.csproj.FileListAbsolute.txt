@@ -232,3 +232,4 @@ C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.API\obj\Debug\net7.0\refint\Jyro
 C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.API\obj\Debug\net7.0\Jyro.API.pdb
 C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.API\obj\Debug\net7.0\Jyro.API.genruntimeconfig.cache
 C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.API\obj\Debug\net7.0\ref\Jyro.API.dll
+C:\Users\thoma\Documents\Projects\Jyro\src\Jyro.API\bin\Debug\net7.0\appsettings.Production.json
