@@ -3,14 +3,14 @@ using Jyro.Core.Interfaces.Repository.Base;
 
 namespace Jyro.Core.Interfaces.Service.Base
 {
-	public interface IBaseService<T> where T : class
+	public interface IBaseService<T, E> where T : IRepository<E> where E : class
 	{
-		T Create(T entity);
-		T Update(T entity);
+		E Create(E entity);
+		E Update(E entity);
 		void Delete(Guid id);
-		T? GetById(Guid id);
-		IEnumerable<T> GetAll();
-		extern virtual IRepository<T> GetRepository();
+		E? GetById(Guid id);
+		IEnumerable<E> GetAll();
+		T GetRepository();
 	}
 }
 

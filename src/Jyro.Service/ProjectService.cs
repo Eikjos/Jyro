@@ -11,20 +11,15 @@ using System.Threading.Tasks;
 
 namespace Jyro.Service
 {
-    public class ProjectService : BaseService<Project>, IProjectService
+    public class ProjectService : BaseService<IProjectRepository, Project>, IProjectService
     {
-        public ProjectService(BaseRepository<Project> projectRepository) : base(projectRepository)
+        public ProjectService(IProjectRepository projectRepository) : base(projectRepository)
         {
         }
 
         public IEnumerable<Project> GetAllByUserId(Guid userId)
         {
             return this.GetRepository().GetAllByUserId(userId);
-        }
-
-        protected override IProjectRepository GetRepository()
-        {
-            return (IProjectRepository)base.GetRepository();
         }
     }
 }

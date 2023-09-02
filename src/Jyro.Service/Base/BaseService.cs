@@ -5,16 +5,16 @@ using Jyro.Infra.Repository.Base;
 
 namespace Jyro.Service.Base
 {
-	public abstract class BaseService<T> : IBaseService<T> where T : class
+	public abstract class BaseService<T, E> : IBaseService<T, E> where T : IRepository<E> where E : class
 	{
-		private readonly BaseRepository<T> _Repository;
+		private readonly T _Repository;
 
-		public BaseService(BaseRepository<T> baseRepository)
+		public BaseService(T repository)
 		{
-			this._Repository = baseRepository;
+			this._Repository = repository;
 		}
 
-        public T Create(T entity)
+        public E Create(E entity)
         {
             return this._Repository.Insert(entity);
         }
@@ -24,24 +24,24 @@ namespace Jyro.Service.Base
             this._Repository.Delete(id);
         }
 
-        public IEnumerable<T> GetAll()
-        {
-            return this._Repository.GetAll();
-        }
-
-        public T? GetById(Guid id)
+        public E? GetById(Guid id)
         {
             return this._Repository.GetById(id);
         }
 
-        protected virtual IRepository<T> GetRepository()
+        public T GetRepository()
         {
             return this._Repository;
         }
 
-        public T Update(T entity)
+        public E Update(E entity)
         {
             return this._Repository.Update(entity);
+        }
+
+        public IEnumerable<E> GetAll()
+        {
+            return this._Repository.GetAll();
         }
     }
 }
