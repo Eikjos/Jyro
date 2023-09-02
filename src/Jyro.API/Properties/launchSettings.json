@@ -36,16 +36,16 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "nativeDebugging": true,
-      "sqlDebugging": true
+      "sqlDebugging": true,
+      "nativeDebugging": true
     },
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
       "environmentVariables": {},
-      "useSSL": true,
-      "publishAllPorts": true
+      "publishAllPorts": true,
+      "useSSL": true
     }
   }
 }

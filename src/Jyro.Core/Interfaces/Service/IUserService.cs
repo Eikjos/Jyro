@@ -1,4 +1,5 @@
 ﻿using Jyro.Core.Entities;
+using Jyro.Core.Interfaces.Service.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +8,8 @@ using System.Threading.Tasks;
 
 namespace Jyro.Core.Interfaces.Service
 {
-    public interface IUserService
+    public interface IUserService : IBaseService<User>
     {
-        User? GetById(Guid Id);
         User? GetByEmail(string Email);
-        User Insert(User user);
-        void Delete(User user);
     }
 }

@@ -35,7 +35,7 @@ namespace Jyro.API.Controllers
             return Ok(project);
         }
 
-        [HttpGet]
+        [HttpGet("get-by-user")]
         [Authorize]
         [AuthorizeRole(new[] { RoleType.PRODUCT_OWNER, RoleType.USER, RoleType.ADMIN})]
         public IActionResult GetAllByUserId()
@@ -43,5 +43,13 @@ namespace Jyro.API.Controllers
             var userId = (Guid) HttpContext.Items["UserId"];
             return Ok(_ProjectService.GetAllByUserId(userId));
         }
+
+        [HttpGet]
+        [Authorize]
+        public IActionResult GetById([FromQuery] Guid id)
+        {
+            return Ok(_ProjectService.GetById(id));
+        }
+
     }
 }

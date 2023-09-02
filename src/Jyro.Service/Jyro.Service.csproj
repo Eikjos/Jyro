@@ -18,4 +18,10 @@
     <ProjectReference Include="..\Jyro.Infra\Jyro.Infra.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Base\" />
+  </ItemGroup>
 </Project>

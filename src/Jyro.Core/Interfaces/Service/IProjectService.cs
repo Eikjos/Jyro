@@ -1,4 +1,5 @@
 ﻿using Jyro.Core.Entities;
+using Jyro.Core.Interfaces.Service.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,8 @@ using System.Threading.Tasks;
 
 namespace Jyro.Core.Interfaces.Service
 {
-    public interface IProjectService
+    public interface IProjectService : IBaseService<Project>
     {
-        Project Create(Project project);
         IEnumerable<Project> GetAllByUserId(Guid userId);
     }
 }

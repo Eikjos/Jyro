@@ -1,6 +1,8 @@
 ﻿using Jyro.Core.Entities;
 using Jyro.Core.Interfaces.Repository;
 using Jyro.Core.Interfaces.Service;
+using Jyro.Infra.Repository.Base;
+using Jyro.Service.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,22 +11,20 @@ using System.Threading.Tasks;
 
 namespace Jyro.Service
 {
-    public class ProjectService : IProjectService
+    public class ProjectService : BaseService<Project>, IProjectService
     {
-        private readonly IProjectRepository _ProjectRepository;
-        public ProjectService(IProjectRepository projectRepository) 
+        public ProjectService(BaseRepository<Project> projectRepository) : base(projectRepository)
         {
-            this._ProjectRepository = projectRepository;
-        }
-
-        public Project Create(Project project)
-        {
-            return _ProjectRepository.Insert(project);
         }
 
         public IEnumerable<Project> GetAllByUserId(Guid userId)
         {
-            return _ProjectRepository.GetAllByUserId(userId);
+            return this.GetRepository().GetAllByUserId(userId);
+        }
+
+        protected override IProjectRepository GetRepository()
+        {
+            return (IProjectRepository)base.GetRepository();
         }
     }
 }

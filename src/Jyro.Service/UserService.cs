@@ -1,36 +1,27 @@
 ﻿using Jyro.Core.Entities;
 using Jyro.Core.Interfaces.Repository;
+using Jyro.Core.Interfaces.Repository.Base;
 using Jyro.Core.Interfaces.Service;
+using Jyro.Infra.Repository.Base;
+using Jyro.Service.Base;
 
 namespace Jyro.Service
 {
-    public class UserService : IUserService
+    public class UserService : BaseService<User>, IUserService
     {
-        private readonly IUserRepository _UserRepository;
 
-        public UserService(IUserRepository userRepository)
+        public UserService(BaseRepository<User> userRepository) : base(userRepository)
         {
-            _UserRepository = userRepository;
         }
 
         public User? GetByEmail(string Email)
         {
-            return _UserRepository.GetByEmail(Email);
+            return this.GetRepository().GetByEmail(Email);
         }
 
-        public User? GetById(Guid Id)
+        protected override IUserRepository GetRepository()
         {
-            return _UserRepository.GetById(Id);
-        }
-
-        public User Insert(User user)
-        {
-            return _UserRepository.Insert(user);
-        }
-
-        public void Delete(User user)
-        {
-            _UserRepository.Delete(user.Id);
+            return (IUserRepository)base.GetRepository();
         }
     }
 }
