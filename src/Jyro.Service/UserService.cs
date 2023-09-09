@@ -7,7 +7,7 @@ using Jyro.Service.Base;
 
 namespace Jyro.Service
 {
-    public class UserService : BaseService<IUserRepository, User>, IUserService
+    public class UserService : CrudService<IUserRepository, User>, IUserService
     {
 
         public UserService(IUserRepository userRepository) : base(userRepository)

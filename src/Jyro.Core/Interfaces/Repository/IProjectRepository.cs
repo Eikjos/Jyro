@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Jyro.Core.Interfaces.Repository
 {
-    public interface IProjectRepository : IRepository<Project>
+    public interface IProjectRepository : ICrudRepository<Project>
     {
         IQueryable<Project> GetAllByUserId(Guid userId);
     }

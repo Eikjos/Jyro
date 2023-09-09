@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Jyro.Service
 {
-    public class ProjectService : BaseService<IProjectRepository, Project>, IProjectService
+    public class ProjectService : CrudService<IProjectRepository, Project>, IProjectService
     {
         public ProjectService(IProjectRepository projectRepository) : base(projectRepository)
         {

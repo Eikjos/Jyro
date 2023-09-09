@@ -5,11 +5,11 @@ using Jyro.Infra.Repository.Base;
 
 namespace Jyro.Service.Base
 {
-	public abstract class BaseService<T, E> : IBaseService<T, E> where T : IRepository<E> where E : class
+	public abstract class CrudService<T, E> : ICrudService<T, E> where T : ICrudRepository<E> where E : class
 	{
 		private readonly T _Repository;
 
-		public BaseService(T repository)
+		public CrudService(T repository)
 		{
 			this._Repository = repository;
 		}

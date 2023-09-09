@@ -14,11 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Jyro.Core\Jyro.Core.csproj" />
-    <ProjectReference Include="..\Jyro.Infra\Jyro.Infra.csproj" />
+    <None Remove="Interfaces\Service\Base\" />
   </ItemGroup>
-
   <ItemGroup>
-    <None Remove="Base\" />
+    <Folder Include="Interfaces\Service\Base\" />
   </ItemGroup>
 </Project>

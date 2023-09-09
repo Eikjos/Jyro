@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Jyro.Infra.Repository.Base
 {
-    public class BaseRepository<T> :IRepository<T> where T : class
+    public class CrudRepository<T> :ICrudRepository<T> where T : class
     {
         private readonly AppDbContext _AppDbContext;
 
-        public BaseRepository(AppDbContext AppDbContext)
+        public CrudRepository(AppDbContext AppDbContext)
         {
             _AppDbContext = AppDbContext;
         }

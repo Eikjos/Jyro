@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Jyro.Core.Interfaces.Repository.Base
 {
-    public interface IRepository<T> where T : class
+    public interface ICrudRepository<T> where T : class
     {
         IQueryable<T> GetAll();
         T? GetById(Guid Id);
