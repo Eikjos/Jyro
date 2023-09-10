@@ -36,7 +36,7 @@ namespace Jyro.API.Controllers
             user.Role = RoleType.USER;
             user.Password = BCrypt.Net.BCrypt.HashPassword(model.Password);
 
-            user = _UserService.Insert(user);
+            user = _UserService.Create(user);
 
             return Ok();
         }
@@ -50,7 +50,7 @@ namespace Jyro.API.Controllers
             if (user == null)
                 return NotFound();
 
-            _UserService.Delete(user);
+            _UserService.Delete(user.Id);
 
             return Ok();
         }

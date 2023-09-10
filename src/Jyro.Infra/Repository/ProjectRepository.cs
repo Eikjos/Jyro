@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Jyro.Infra.Repository
 {
-    public class ProjectRepository : BaseRepository<Project>, IProjectRepository
+    public class ProjectRepository : CrudRepository<Project>, IProjectRepository
     {
         public ProjectRepository(AppDbContext AppDbContext) : base(AppDbContext)
         {

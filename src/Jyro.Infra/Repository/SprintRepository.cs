@@ -9,15 +9,10 @@ using System.Threading.Tasks;
 
 namespace Jyro.Infra.Repository
 {
-    public class UserRepository : CrudRepository<User>, IUserRepository
+    public class SprintRepository : CrudRepository<Sprint>, ISprintRepository
     {
-        public UserRepository(AppDbContext AppDbContext) : base(AppDbContext)
+        public SprintRepository(AppDbContext AppDbContext) : base(AppDbContext)
         {
-        }
-
-        public User? GetByEmail(string Email)
-        {
-            return GetAll().FirstOrDefault(u => u.Email == Email);
         }
     }
 }

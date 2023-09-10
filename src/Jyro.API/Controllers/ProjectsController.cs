@@ -44,12 +44,11 @@ namespace Jyro.API.Controllers
             return Ok(_ProjectService.GetAllByUserId(userId));
         }
 
-        [HttpGet]
+        [HttpGet("get-by-id")]
         [Authorize]
         public IActionResult GetById([FromQuery] Guid id)
         {
             return Ok(_ProjectService.GetById(id));
         }
-
     }
 }
