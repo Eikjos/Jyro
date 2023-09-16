@@ -15,5 +15,10 @@ namespace Jyro.Service
         public SprintService(ISprintRepository repository) : base(repository)
         {
         }
+
+        public IEnumerable<Sprint> GetByProjectId(Guid projectId)
+        {
+            return GetRepository().GetByProjectId(projectId);
+        }
     }
 }

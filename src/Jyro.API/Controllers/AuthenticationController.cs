@@ -1,4 +1,5 @@
-﻿using Jyro.API.Controllers.Base;
+﻿using Jyro.API.Constants;
+using Jyro.API.Controllers.Base;
 using Jyro.API.Helper;
 using Jyro.API.Model.Authentication.Auth;
 using Jyro.API.Model.Authentication.Login;
@@ -29,14 +30,14 @@ namespace Jyro.API.Controllers
         public IActionResult Auth()
         {
             // refresh du token
-            var userId = (Guid) HttpContext.Items["UserId"];
+            var userId = (Guid) HttpContext.Items[AppConstant.USER_ID_TOKEN];
             var user  = _UserService.GetById(userId);
             var cookieOptions = new CookieOptions();
             cookieOptions.Expires = DateTime.Now.AddDays(7);
             cookieOptions.Path = "/";
             var token = JWTHelper.GenerateToken(user, _Configuration);
 
-            Response.Cookies.Append("token", token, cookieOptions);
+            Response.Cookies.Append(AppConstant.TOKEN_JWT, token, cookieOptions);
 
             return Ok(new AuthResponseModel(user, token));
         }
@@ -59,7 +60,7 @@ namespace Jyro.API.Controllers
             cookieOptions.Path = "/";
             var token = JWTHelper.GenerateToken(user, _Configuration);
 
-            Response.Cookies.Append("token", token, cookieOptions);
+            Response.Cookies.Append(AppConstant.TOKEN_JWT, token, cookieOptions);
 
             return Ok(new LoginResponseModel(user, token));
         }
@@ -73,7 +74,7 @@ namespace Jyro.API.Controllers
             cookieOptions.Expires = DateTime.Now;
             cookieOptions.Path = "/";
 
-            Response.Cookies.Append("token", "", cookieOptions);
+            Response.Cookies.Append(AppConstant.TOKEN_JWT, "", cookieOptions);
 
             return Ok();
         }

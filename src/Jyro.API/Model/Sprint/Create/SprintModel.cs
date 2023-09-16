@@ -5,6 +5,7 @@ namespace Jyro.API.Model.Sprint.Create
 {
     public class SprintModel
     {
+        public Guid Id { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]

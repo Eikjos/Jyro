@@ -15,9 +15,13 @@ namespace Jyro.Infra.Repository
         {
         }
 
-        public IQueryable<Project> GetAllByUserId(Guid userId)
+        public IQueryable<Project> GetAllByUserId(Guid userId, string? search)
         {
-            return GetAll().Where(p => p.Users.Any(u => u.Id == userId));
+            var projects = GetAll().Where(p => p.Users.Any(u => u.Id == userId));
+            if (search != null)
+                return projects.Where(p => p.Name.Contains(search));
+
+            return projects;
         }
     }
 }

@@ -10,5 +10,6 @@ namespace Jyro.Core.Interfaces.Repository
 {
     public interface ISprintRepository : ICrudRepository<Sprint>
     {
+        IQueryable<Sprint> GetByProjectId(Guid projectId);
     }
 }

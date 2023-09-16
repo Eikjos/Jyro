@@ -11,6 +11,6 @@ namespace Jyro.Core.Interfaces.Service
 {
     public interface IProjectService : ICrudService<IProjectRepository, Project>
     {
-        IEnumerable<Project> GetAllByUserId(Guid userId);
+        IEnumerable<Project> GetAllByUserId(Guid userId, string? search);
     }
 }

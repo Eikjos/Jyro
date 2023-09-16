@@ -14,5 +14,10 @@ namespace Jyro.Infra.Repository
         public SprintRepository(AppDbContext AppDbContext) : base(AppDbContext)
         {
         }
+
+        public IQueryable<Sprint> GetByProjectId(Guid projectId)
+        {
+            return GetAll().Where(s => s.Project.Id == projectId);
+        }
     }
 }

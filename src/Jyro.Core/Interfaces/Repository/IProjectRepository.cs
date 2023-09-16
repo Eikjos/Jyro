@@ -10,6 +10,6 @@ namespace Jyro.Core.Interfaces.Repository
 {
     public interface IProjectRepository : ICrudRepository<Project>
     {
-        IQueryable<Project> GetAllByUserId(Guid userId);
+        IQueryable<Project> GetAllByUserId(Guid userId, string? search);
     }
 }

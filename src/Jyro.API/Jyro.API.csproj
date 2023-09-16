@@ -32,4 +32,10 @@
     <ProjectReference Include="..\Jyro.Service\Jyro.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Constants\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Constants\" />
+  </ItemGroup>
 </Project>

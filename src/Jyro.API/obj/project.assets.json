@@ -3524,41 +3524,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thoma\\.nuget\\packages\\": {}
+    "/Users/thomas/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.API\\Jyro.API.csproj",
+      "projectUniqueName": "/Users/thomas/Documents/projects/Jyro/src/Jyro.API/Jyro.API.csproj",
       "projectName": "Jyro.API",
-      "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.API\\Jyro.API.csproj",
-      "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.API\\obj\\",
+      "projectPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.API/Jyro.API.csproj",
+      "packagesPath": "/Users/thomas/.nuget/packages/",
+      "outputPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/thomas/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.308/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\Jyro.Core.csproj": {
-              "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Core\\Jyro.Core.csproj"
+            "/Users/thomas/Documents/projects/Jyro/src/Jyro.Core/Jyro.Core.csproj": {
+              "projectPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Core/Jyro.Core.csproj"
             },
-            "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Infra\\Jyro.Infra.csproj": {
-              "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Infra\\Jyro.Infra.csproj"
+            "/Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/Jyro.Infra.csproj": {
+              "projectPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/Jyro.Infra.csproj"
             },
-            "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Service\\Jyro.Service.csproj": {
-              "projectPath": "C:\\Users\\thoma\\Documents\\Projects\\Jyro\\src\\Jyro.Service\\Jyro.Service.csproj"
+            "/Users/thomas/Documents/projects/Jyro/src/Jyro.Service/Jyro.Service.csproj": {
+              "projectPath": "/Users/thomas/Documents/projects/Jyro/src/Jyro.Service/Jyro.Service.csproj"
             }
           }
         }
@@ -3631,7 +3629,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -3640,7 +3638,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Le package 'BCrypt.Net 0.1.0' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' au lieu du framework cible du projet 'net7.0'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "message": "Package 'BCrypt.Net 0.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
       "libraryId": "BCrypt.Net",
       "targetGraphs": [
         "net7.0"

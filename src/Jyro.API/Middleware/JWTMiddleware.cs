@@ -4,6 +4,7 @@ using Jyro.Core.Entities;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Jyro.API.Constants;
 
 namespace Jyro.API.Middleware
 {
@@ -25,8 +26,8 @@ namespace Jyro.API.Middleware
             if (userId.HasValue)
             {
                 // attach user to context on successful jwt validation
-                context.Items["UserId"] =userId.Value;
-                context.Items["Roles"] = userService.GetById(userId.Value).Role;
+                context.Items[AppConstant.USER_ID_TOKEN] =userId.Value;
+                context.Items[AppConstant.ROLE_TOKEN] = userService.GetById(userId.Value).Role;
             }
 
             await _next(context);

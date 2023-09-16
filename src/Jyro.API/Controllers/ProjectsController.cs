@@ -1,7 +1,8 @@
-﻿using Jyro.API.Attribute;
+﻿using AutoMapper;
+using Jyro.API.Attribute;
+using Jyro.API.Constants;
 using Jyro.API.Controllers.Base;
 using Jyro.API.Model.Project.Create;
-using Jyro.API.Model.User.Register;
 using Jyro.Core.Entities;
 using Jyro.Core.Enum;
 using Jyro.Core.Interfaces.Service;
@@ -14,9 +15,13 @@ namespace Jyro.API.Controllers
     public class ProjectsController : BaseAPIController
     {
         private readonly IProjectService _ProjectService;
-        public ProjectsController(IProjectService projectService) 
+        private readonly IUserService _UserService;
+        private readonly IMapper _mapper;
+        public ProjectsController(IProjectService projectService, IUserService userService, IMapper mapper) 
         {
-            this._ProjectService = projectService;
+            _ProjectService = projectService;
+            _UserService = userService;
+            _mapper = mapper;
         }
 
         [HttpPost]
@@ -27,8 +32,9 @@ namespace Jyro.API.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var mapper = Jyro.API.Helper.AutoMapper.GetMapper<ProjectModel, Project>();
-            var project = mapper.Map<Project>(model);
+            var user = _UserService.GetById((Guid) HttpContext.Items[AppConstant.USER_ID_TOKEN]);
+            var project = _mapper.Map<ProjectModel, Project>(model);
+            project.Users.Add(user);
 
             project = _ProjectService.Create(project);
 
@@ -38,9 +44,9 @@ namespace Jyro.API.Controllers
         [HttpGet("get-by-user")]
         [Authorize]
         [AuthorizeRole(new[] { RoleType.PRODUCT_OWNER, RoleType.USER, RoleType.ADMIN})]
-        public IActionResult GetAllByUserId()
+        public IActionResult GetAllByUserId([FromQuery] string? search)
         {
-            var userId = (Guid) HttpContext.Items["UserId"];
+            var userId = (Guid) HttpContext.Items[AppConstant.USER_ID_TOKEN];
             return Ok(_ProjectService.GetAllByUserId(userId));
         }
 

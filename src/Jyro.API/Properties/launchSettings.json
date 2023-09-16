@@ -36,8 +36,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "sqlDebugging": true,
-      "nativeDebugging": true
+      "nativeDebugging": true,
+      "sqlDebugging": true
     },
     "Docker": {
       "commandName": "Docker",
