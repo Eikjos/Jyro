@@ -17,7 +17,7 @@ namespace Jyro.Infra.Repository
 
         public IQueryable<Sprint> GetByProjectId(Guid projectId)
         {
-            return GetAll().Where(s => s.Project.Id == projectId);
+            return GetAll().Where(s => s.Project.Id == projectId).OrderBy(s => s.Start);
         }
     }
 }
