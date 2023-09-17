@@ -18,5 +18,6 @@ namespace Jyro.Core.Entities
         public virtual ICollection<Project> Projects { get; set; }
         public virtual ICollection<Commentary> CommentariesWrote { get; set; }
         public virtual ICollection<Commentary> CommentaryMentionned { get; set; }
+        public virtual ICollection<RequestInviteProject> RequestInviteProjects { get; set; }
     }
 }

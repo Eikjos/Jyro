@@ -20,12 +20,20 @@ namespace Jyro.Infra
         public DbSet<Sprint> Sprints { get; set; }
         public DbSet<Core.Entities.Task> Tasks { get; set; }
         public DbSet<Time> Times { get; set; }
+        public DbSet<RequestInviteProject> RequestInviteProjects { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>(user =>
             {
                 user.HasMany(u => u.CommentariesWrote).WithOne(c => c.Author);
                 user.HasMany(u => u.CommentaryMentionned).WithMany(c => c.Mentionned);
+            });
+
+            modelBuilder.Entity<Project>(project =>
+            {
+                project.HasMany(p => p.Users).WithMany(u => u.Projects);
+                project.HasOne(p => p.Customer).WithMany(u => u.Projects);
             });
         }
     }

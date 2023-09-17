@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Jyro.Core.Entities
 {
-    public class Project
+    public class Customer
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
-        public virtual Customer Customer { get; set; }
-        public virtual ICollection<Sprint> Sprints { get; set;}
+        public string Adresse { get; set; }
         public virtual ICollection<User> Users { get; set; }
-        public virtual ICollection<RequestInviteProject> RequestInviteProjects { get; set; }
+        public virtual ICollection<Project> Projects { get; set; }
     }
 }

@@ -1,13 +1,6 @@
-﻿using System;
-using System.Linq.Expressions;
-using System.Reflection;
-using AutoMapper;
-using AutoMapper.Execution;
-using AutoMapper.Internal;
+﻿using AutoMapper;
 using Jyro.API.Model.Project.Create;
-using Jyro.API.Model.Sprint.Create;
 using Jyro.Core.Entities;
-using Jyro.Core.Interfaces.Service;
 
 namespace Jyro.API.Profiles
 {
@@ -15,7 +8,20 @@ namespace Jyro.API.Profiles
     {
         public ProjectProfile()
         {
-            CreateMap<ProjectModel, Project>();
+            CreateMap<ProjectModel, Project>().AfterMap<MappingCustomer>();
+        }
+    }
+
+    public class MappingCustomer : IMappingAction<ProjectModel, Project>
+    {
+
+        public MappingCustomer()
+        {
+        }
+
+        public void Process(ProjectModel source, Project destination, ResolutionContext context)
+        {
+            throw new NotImplementedException();
         }
     }
 }

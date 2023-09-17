@@ -7,6 +7,8 @@ namespace Jyro.API.Model.Project.Create
         [Required]
         public string Name { get; set; }
         [Required]
-        public string Description { get; set; } 
+        public string Description { get; set; }
+        [Required]
+        public Guid CustomerId { get; set; }
     }
 }
