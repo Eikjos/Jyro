@@ -32,3 +32,20 @@ C:/Users/thoma/Documents/Projects/Jyro/src/Jyro.Infra/obj/Debug/net7.0/Jyro.Infr
 /Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/obj/Debug/net7.0/Jyro.Infra.pdb
 /Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/obj/Debug/net7.0/Jyro.Infra.genruntimeconfig.cache
 /Users/thomas/Documents/projects/Jyro/src/Jyro.Infra/obj/Debug/net7.0/ref/Jyro.Infra.dll
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\bin\Debug\net7.0\Jyro.Infra.deps.json
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\bin\Debug\net7.0\Jyro.Infra.runtimeconfig.json
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\bin\Debug\net7.0\Jyro.Infra.dll
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\bin\Debug\net7.0\Jyro.Infra.pdb
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\bin\Debug\net7.0\Jyro.Core.dll
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\bin\Debug\net7.0\Jyro.Core.pdb
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\obj\Debug\net7.0\Jyro.Infra.csproj.AssemblyReference.cache
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\obj\Debug\net7.0\Jyro.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\obj\Debug\net7.0\Jyro.Infra.AssemblyInfoInputs.cache
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\obj\Debug\net7.0\Jyro.Infra.AssemblyInfo.cs
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\obj\Debug\net7.0\Jyro.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\obj\Debug\net7.0\Jyro.Infra.csproj.CopyComplete
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\obj\Debug\net7.0\Jyro.Infra.dll
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\obj\Debug\net7.0\refint\Jyro.Infra.dll
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\obj\Debug\net7.0\Jyro.Infra.pdb
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\obj\Debug\net7.0\Jyro.Infra.genruntimeconfig.cache
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Infra\obj\Debug\net7.0\ref\Jyro.Infra.dll

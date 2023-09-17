@@ -47,7 +47,7 @@ namespace Jyro.API.Controllers
         public IActionResult GetAllByUserId([FromQuery] string? search)
         {
             var userId = (Guid) HttpContext.Items[AppConstant.USER_ID_TOKEN];
-            return Ok(_ProjectService.GetAllByUserId(userId));
+            return Ok(_ProjectService.GetAllByUserId(userId, search));
         }
 
         [HttpGet("get-by-id")]

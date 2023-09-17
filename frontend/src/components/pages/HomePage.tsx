@@ -1,9 +1,16 @@
 import { Flex } from '@chakra-ui/react';
 import { BoxTemplate, MenuTemplate, NewsItem, NotificationItem, TaskItem } from '@components';
+import { useUserContext } from '@context/UserContext';
 
 function HomePage() {
+  const { user } = useUserContext();
+
   return (
-    <MenuTemplate title="TH" name="Hamelin" route="default">
+    <MenuTemplate
+      title={user != null ? (user.firstname.charAt(0) + user.lastname.charAt(0)).toUpperCase() : ''}
+      name={user != null ? user.lastname : ''}
+      route="default"
+    >
       <Flex direction={'row'} width={'100%'} height="100%" padding={'35px'} alignItems={'center'} gap="35px">
         <BoxTemplate title="Tâches en cours" width={'650px'} height={'95%'}>
           <TaskItem

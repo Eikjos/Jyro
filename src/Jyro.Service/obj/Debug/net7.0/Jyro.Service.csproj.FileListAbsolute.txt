@@ -36,3 +36,22 @@ C:/Users/thoma/Documents/Projects/Jyro/src/Jyro.Service/obj/Debug/net7.0/Jyro.Se
 /Users/thomas/Documents/projects/Jyro/src/Jyro.Service/obj/Debug/net7.0/Jyro.Service.csproj.CopyComplete
 /Users/thomas/Documents/projects/Jyro/src/Jyro.Service/obj/Debug/net7.0/Jyro.Service.genruntimeconfig.cache
 /Users/thomas/Documents/projects/Jyro/src/Jyro.Service/obj/Debug/net7.0/ref/Jyro.Service.dll
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Service.deps.json
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Service.runtimeconfig.json
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Service.dll
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Service.pdb
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Core.dll
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Infra.dll
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Core.pdb
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\bin\Debug\net7.0\Jyro.Infra.pdb
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.csproj.AssemblyReference.cache
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.AssemblyInfoInputs.cache
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.AssemblyInfo.cs
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.csproj.CoreCompileInputs.cache
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.csproj.CopyComplete
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.dll
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\refint\Jyro.Service.dll
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.pdb
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\Jyro.Service.genruntimeconfig.cache
+C:\Users\Thomas Hamelin\Documents\Projects\Jyro\src\Jyro.Service\obj\Debug\net7.0\ref\Jyro.Service.dll

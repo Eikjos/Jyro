@@ -22,10 +22,8 @@ function NotificationItem({ name, content1, content2 }: NotificationItempProps) 
           <Heading as="h6" variant="xs">
             {name}
           </Heading>
-          <Text variant="xs">
-            {content1}
-            <Text>{content2}</Text>
-          </Text>
+          <Text variant="xs">{content1}</Text>
+          <Text variant="xs">{content2}</Text>
         </Flex>
         <Icon as={MdCircleNotifications} color="#FB6A6A" boxSize={'30px'} />
       </Flex>

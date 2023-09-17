@@ -30,7 +30,7 @@ const UserContextProvider = ({ children }: { children: ReactNode }) => {
     },
   });
 
-  useQuery({
+  const currentUser = useQuery({
     queryFn: () => auth(getToken()),
     queryKey: ['user', '@me'],
     onSuccess: (data) => {
@@ -62,6 +62,7 @@ const UserContextProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const value: UserContextType = {
+    isLoaging: currentUser.isLoading,
     user: user,
     login: login,
     logout: logout,

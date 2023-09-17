@@ -44,24 +44,22 @@ function TaskItem({ name, projectName, consumed, remaining, original, priority, 
           </Flex>
         </Flex>
         <Flex direction={'row'} alignItems={'center'}>
-          <Text variant={'xs'} color="red" marginRight={'5px'}>
-            {match(priority)
-              .with('hight', () => (
-                <Text variant={'xs'} color="red" marginRight={'5px'}>
-                  Haute
-                </Text>
-              ))
-              .with('medium', () => (
-                <Text variant={'xs'} color="#FFB648" marginRight={'5px'}>
-                  Moyenne
-                </Text>
-              ))
-              .otherwise(() => (
-                <Text variant={'xs'} color="#1C495C" marginRight={'5px'}>
-                  Faible
-                </Text>
-              ))}
-          </Text>
+          {match(priority)
+            .with('hight', () => (
+              <Text variant={'xs'} color="red" marginRight={'5px'}>
+                Haute
+              </Text>
+            ))
+            .with('medium', () => (
+              <Text variant={'xs'} color="#FFB648" marginRight={'5px'}>
+                Moyenne
+              </Text>
+            ))
+            .otherwise(() => (
+              <Text variant={'xs'} color="#1C495C" marginRight={'5px'}>
+                Faible
+              </Text>
+            ))}
           <Text variant={'xs'} color="red" marginRight={'5px'}></Text>
           <Avatar
             title={(user.firstname[0] + user.lastname[0]).toUpperCase()}
